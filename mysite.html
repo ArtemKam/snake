@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>
+my site
+</title>
+</head>
+<body>
+	<div id="score">score:
+	</div>
+	
+	<canvas id="aaa" height="500" width="500">
+	
+	</canvas>
+	<script>
+		window.onload=function(){
+			var score = 0;
+			var scorediv = document.getElementById("score");
+			window.setInterval(function(){
+				scorediv.innerHTML = "score:" + score;
+				score += 100;
+			}, 1000);
+			
+		}
+	</script>
+</body>
+</html>
